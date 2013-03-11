@@ -6,7 +6,7 @@
 
 MCDebugLib:InstallDebugger("GroupCalendar", GroupCalendar, {r=0.8,g=0.5,b=1})
 
-GroupCalendar.VersionString = "4.6.1 edited for SpanishXJ @vGaming.es"
+GroupCalendar.VersionString = "4.6.1 (SpanishXJ @vGaming.es)"
 
 GroupCalendar_cTitle = "Group Calendar v%s"
 

@@ -364,9 +364,9 @@
 				</Texture>
 			</Layer>
 			<Layer level="OVERLAY">
-				<FontString name="GroupCalendarTitleText" text="GroupCalendar_cTitle" inherits="GameFontHighlight">
+				<FontString name="GroupCalendarTitleText" text="GroupCalendar_cTitle" inherits="GameFontHighlightSmall">
 					<Anchors>
-						<Anchor point="TOP"><Offset x="17" y="-18"/></Anchor>
+						<Anchor point="TOP"><Offset x="22" y="-18"/></Anchor>
 					</Anchors>
 				</FontString>
 			</Layer>
