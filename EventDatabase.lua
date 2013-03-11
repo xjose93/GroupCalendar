@@ -220,6 +220,8 @@ GroupCalendar.cBlizzardIconMap =
 	GrandCrusaderH = "ArgentRaid",
 	IcecrownCitadel = "ICECROWNCITADEL",
 	IcecrownCitadelH = "ICECROWNCITADEL",
+	Ruby = "RubySanctum",
+	RubyH = "RubySanctum",
 	Scholo = "Scholomance",
 	DM = "DireMaul",
 	Strath = "Stratholme",
@@ -396,6 +398,8 @@ GroupCalendar.EventTypes =
 			{id="GrandCrusaderH",name = GroupCalendar_cGrandCrusaderHEventName, limits = GroupCalendar.Limits25, minLevel = 80},
 			{id="IcecrownCitadel",name = GroupCalendar_cIcecrownCitadelEventName, limits = GroupCalendar.Limits10, minLevel = 80},
 			{id="IcecrownCitadelH",name = GroupCalendar_cIcecrownCitadelHEventName, limits = GroupCalendar.Limits25, minLevel = 80},
+			{id="Ruby",         name = GroupCalendar_cRubyEventName,            limits = GroupCalendar.Limits10, minLevel = 80},
+			{id="RubyH",        name = GroupCalendar_cRubyHEventName,           limits = GroupCalendar.Limits25, minLevel = 80},
 		}
 	},
 	DungeonClassic =

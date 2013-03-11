@@ -332,6 +332,8 @@ GroupCalendar_cGrandCrusaderEventName = "Trial of the Grand Crusader (10 Player)
 GroupCalendar_cGrandCrusaderHEventName = "Trial of the Grand Crusader (25 Player)"
 GroupCalendar_cIcecrownCitadelEventName = "Icecrown Citadel (10 Player)"
 GroupCalendar_cIcecrownCitadelHEventName = "Icecrown Citadel (25 Player)"
+GroupCalendar_cRubyEventName = "The Ruby Sanctum (10 Player)"
+GroupCalendar_cRubyHEventName = "The Ruby Sanctum (25 Player)"
 
 -- Resets
 
