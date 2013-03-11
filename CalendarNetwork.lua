@@ -32,9 +32,9 @@ GroupCalendar.Network =
 		-- Synch phase timing
 		
 		StartSynch = 0.5,
-		ExternalUpdateRequest = 30,
+		ExternalUpdateRequest = 5,
 		SynchVersionRequest = 1,
-		SynchComplete = 180, -- Allow time for updates to arrive before we'll start advertising databases
+		SynchComplete = 10, -- Allow time for updates to arrive before we'll start advertising databases
 		
 		-- Debugging settings
 		
