@@ -1,0 +1,183 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+	
+	<Frame name="CalendarTimeTemplate" hidden="false" virtual="true">
+		<Size>
+			<AbsDimension x="185" y="24"/>
+		</Size>
+		<Frames>
+			<Frame name="$parentHour" inherits="CalendarDropDownTemplate">
+				<Size><AbsDimension x="55" y="24"/></Size>
+				<Anchors>
+					<Anchor point="LEFT"/>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						_G[self:GetName().."Title"]:SetText(GroupCalendar_cTimeLabel)
+						CalendarHourDropDown_OnLoad(self)
+					</OnLoad>
+					<OnShow>
+						CalendarHourDropDown_OnLoad(self)
+					</OnShow>
+				</Scripts>
+			</Frame>
+			<Frame name="$parentMinute" inherits="CalendarDropDownTemplate">
+				<Size><AbsDimension x="55" y="24"/></Size>
+				<Anchors>
+					<Anchor point="LEFT" relativePoint="RIGHT" relativeTo="$parentHour">
+						<Offset>
+							<AbsDimension x="10" y="0"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						_G[self:GetName().."Title"]:SetText(":")
+						CalendarMinuteDropDown_OnLoad(self)
+					</OnLoad>
+					<OnShow>
+						CalendarMinuteDropDown_OnLoad(self)
+					</OnShow>
+				</Scripts>
+			</Frame>
+			<Frame name="$parentAMPM" inherits="CalendarDropDownTemplate">
+				<Size><AbsDimension x="55" y="24"/></Size>
+				<Anchors>
+					<Anchor point="LEFT" relativePoint="RIGHT" relativeTo="$parentMinute">
+						<Offset>
+							<AbsDimension x="10" y="0"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						CalendarAMPMDropDown_OnLoad(self)
+					</OnLoad>
+					<OnShow>
+						CalendarAMPMDropDown_OnLoad(self)
+					</OnShow>
+				</Scripts>
+			</Frame>
+		</Frames>
+	</Frame>
+
+	<Frame name="CalendarDurationTemplate" inherits="CalendarDropDownTemplate" hidden="false" virtual="true">
+		<Size><AbsDimension x="120" y="24"/></Size>
+		<Scripts>
+			<OnLoad>
+				_G[self:GetName().."Title"]:SetText(GroupCalendar_cDurationLabel)
+				CalendarDurationDropDown_OnLoad(self)
+			</OnLoad>
+			<OnShow>
+				CalendarDurationDropDown_OnLoad(self)
+			</OnShow>
+		</Scripts>
+	</Frame>
+
+	<Frame name="CalendarEventTypeTemplate" inherits="CalendarDropDownTemplate" virtual="true">
+		<Size><AbsDimension x="150" y="24"/></Size>
+		<Scripts>
+			<OnLoad>
+				_G[self:GetName().."Title"]:SetText(GroupCalendar_cEventLabel)
+				CalendarEventTypeDropDown_OnLoad(self)
+			</OnLoad>
+			<OnShow>
+				CalendarEventTypeDropDown_OnLoad(self)
+			</OnShow>
+		</Scripts>
+	</Frame>
+
+	<Frame name="CalendarConfigModeMenuTemplate"  inherits="CalendarDropDownTemplate" hidden="false" virtual="true">
+		<Size>
+			<AbsDimension x="130" y="24"/>
+		</Size>
+		<Scripts>
+			<OnLoad>
+				_G[self:GetName().."Title"]:SetText(GroupCalendar_cConfigModeLabel)
+				CalendarConfigModeDropDown_OnLoad(self)
+			</OnLoad>
+			<OnShow>
+				CalendarConfigModeDropDown_OnLoad(self)
+			</OnShow>
+		</Scripts>
+	</Frame>
+
+	<Frame name="CalendarPlayerClassMenuTemplate" inherits="CalendarDropDownTemplate" virtual="true">
+		<Size><AbsDimension x="110" y="24"/></Size>
+		<Scripts>
+			<OnLoad>
+				_G[self:GetName().."Title"]:SetText(GroupCalendar_cPlayerClassLabel)
+				CalendarClassDropDown_OnLoad(self)
+			</OnLoad>
+			<OnShow>
+				CalendarClassDropDown_OnLoad(self)
+			</OnShow>
+		</Scripts>
+	</Frame>
+
+	<Frame name="CalendarPlayerRaceMenuTemplate" hidden="false" virtual="true" inherits="CalendarDropDownTemplate">
+		<Size><AbsDimension x="100" y="24"/></Size>
+		<Scripts>
+			<OnLoad>
+				_G[self:GetName().."Title"]:SetText(GroupCalendar_cPlayerRaceLabel)
+				CalendarRaceDropDown_OnLoad(self)
+			</OnLoad>
+			<OnShow>
+				CalendarRaceDropDown_OnLoad(self)
+			</OnShow>
+		</Scripts>
+	</Frame>
+
+	<Frame name="CalendarPlayerStatusMenuTemplate" hidden="false" virtual="true" inherits="CalendarDropDownTemplate">
+		<Size><AbsDimension x="100" y="24"/></Size>
+		<Scripts>
+			<OnLoad>
+				_G[self:GetName().."Title"]:SetText(GroupCalendar_cPlayerStatusLabel)
+				CalendarStatusDropDown_OnLoad(self)
+			</OnLoad>
+			<OnShow>
+				CalendarStatusDropDown_OnLoad(self)
+			</OnShow>
+		</Scripts>
+	</Frame>
+	
+	<Frame name="CalendarPlayerRankMenuTemplate" hidden="false" virtual="true" inherits="CalendarDropDownTemplate">
+		<Size><AbsDimension x="100" y="24"/></Size>
+		<Scripts>
+			<OnLoad>
+				_G[self:GetName().."Title"]:SetText(GroupCalendar_cRankLabel)
+				CalendarGuildRank_OnLoad(self)
+			</OnLoad>
+			<OnShow>
+				CalendarGuildRank_OnLoad(self)
+			</OnShow>
+		</Scripts>
+	</Frame>
+	
+	<Frame name="CalendarCharactersTemplate" inherits="CalendarDropDownTemplate" virtual="true">
+		<Size><AbsDimension x="100" y="24"/></Size>
+		<Scripts>
+			<OnLoad>
+				_G[self:GetName().."Title"]:SetText(GroupCalendar_cCharactersLabel)
+				CalendarCharactersDropDown_OnLoad(self)
+			</OnLoad>
+			<OnShow>
+				CalendarCharactersDropDown_OnLoad(self)
+			</OnShow>
+		</Scripts>
+	</Frame>
+	
+	<Frame name="CalendarPlayerRoleMenuTemplate" inherits="CalendarDropDownTemplate" virtual="true">
+		<Size><AbsDimension x="100" y="24"/></Size>
+		<Scripts>
+			<OnLoad>
+				_G[self:GetName().."Title"]:SetText(GroupCalendar_cRoleLabel)
+				CalendarRoleMenu_OnLoad(self)
+			</OnLoad>
+			<OnShow>
+				CalendarRoleMenu_OnLoad(self)
+			</OnShow>
+		</Scripts>
+	</Frame>
+	
+</Ui>
